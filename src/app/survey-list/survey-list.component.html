@@ -1,0 +1,29 @@
+<h1>All Current Student Survey Data</h1>
+<mat-list>
+    <mat-card *ngFor="let studentSurvey of studentSurveyList">
+        <mat-card-header>
+            <mat-card-title>{{studentSurvey.firstName}} {{studentSurvey.lastName}}</mat-card-title>
+            <mat-card-subtitle>Email: {{studentSurvey.email}}&emsp;Phone Number: {{studentSurvey.telephoneNumber}}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                <strong>Date:</strong> {{studentSurvey.date | date: 'fullDate'}}
+            </p>
+            <p>
+                <strong>Address:</strong> {{studentSurvey.address}}, {{studentSurvey.city}}, {{studentSurvey.state}}
+                {{studentSurvey.zipcode}}
+            </p>
+            <p>
+                <strong>Things Liked:</strong> {{studentSurvey.thingsLiked}}
+            </p>
+            <p>
+                <strong>Interested:</strong> {{studentSurvey.interested}}
+            </p>
+            <p>
+                <strong>Recommendation:</strong> {{studentSurvey.recommendation}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+    <mat-divider></mat-divider>
+</mat-list>
