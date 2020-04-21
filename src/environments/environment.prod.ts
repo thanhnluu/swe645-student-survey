@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  studentSurveyServiceUrl: 'http://3.226.238.196:31284/student-survey-api/studentsurvey'
+  studentSurveyServiceUrl: 'http://18.204.34.127:30497/student-survey-api/studentsurvey'
 };
