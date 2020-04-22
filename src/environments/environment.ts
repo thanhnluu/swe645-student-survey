@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  studentSurveyServiceUrl: 'http://18.204.34.127:30497/student-survey-api/studentsurvey'
+  studentSurveyServiceUrl: 'http://3.80.159.54:30674/student-survey-api/studentsurvey'
 };
 
 /*
